@@ -32,10 +32,19 @@ public class Range {
     }
 
     public double[] interval(double from1, double to1, double from2, double to2) {
+        double[] mas = new double[2];
         if (from2 >= from1 && from2 <= to1) {
-            double[] mas = new double[2];
             mas[0] = from2;
+        } else {
+            return null;
+        }
+
+        if (to2 >= from1 && to2 <= to1) {
+            mas[1] = to2;
+        } else {
             mas[1] = to1;
         }
+
+        return mas;
     }
 }

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -31,7 +32,12 @@ public class Main {
 
         System.out.println(range.isInside(number));    // применение метода isInside
 
+        double from1 = range.getFrom();
+        double to1 = range.getTo();
+        double from2 = range2.getFrom();
+        double to2 = range2.getTo();
 
+        System.out.println(Arrays.toString(range.interval(from1, to1, from2, to2)));
     }
 }
 
