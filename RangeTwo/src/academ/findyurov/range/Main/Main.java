@@ -1,3 +1,7 @@
+package academ.findyurov.range.Main;
+
+import academ.findyurov.range.Range.Range;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
